@@ -5,7 +5,7 @@
       <book-item v-for='book in books' :book='book' :key='book.index'></book-item>
     </ul>
     <div>
-      <book-form @addBook='appendBook'></book-form>
+      <book-form @addBook='appendBook' :books='books'></book-form>
     </div>
   </div>
 </template>
